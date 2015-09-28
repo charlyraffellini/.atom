@@ -30,3 +30,21 @@ atom-text-editor {
 atom-text-editor::shadow .cursor {
   // border-color: red;
 }
+
+@tree-view-font-size: 30px;
+@tree-view-line-height: 40px;
+
+.tree-view {
+  font-size: @tree-view-font-size;
+
+  .list-group li:not(.list-nested-item),
+  .list-tree li:not(.list-nested-item),
+  .list-group li.list-nested-item > .list-item,
+  .list-tree li.list-nested-item > .list-item {
+    line-height: @tree-view-line-height;
+  }
+  .list-group .selected::before,
+  .list-tree .selected::before {
+    height: @tree-view-line-height;
+  }
+}
