@@ -31,6 +31,13 @@ atom-text-editor::shadow .cursor {
   // border-color: red;
 }
 
+//https://github.com/atom/atom/issues/2530
+@font-size: 30px;
+html, body, .tree-view, .tab-bar .tab {
+  font-size: @font-size;
+}
+
+//https://github.com/atom/atom/issues/3792
 @tree-view-font-size: 30px;
 @tree-view-line-height: 40px;
 
